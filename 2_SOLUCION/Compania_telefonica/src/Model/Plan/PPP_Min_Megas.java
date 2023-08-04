@@ -6,10 +6,12 @@ public class PPP_Min_Megas extends Plan_movil_Minutos_Megas {
         super(tarifa, min, megas_gigas);
     }
 
+    @Override
     public double calcularExtra_min() {
         return this.costos_megas.calcularCosto_megas(this.megas_gigas,this.costo_gigas,2);
     }
 
+    @Override
     public double calcularExtra_gigas() {
         return costos_min.calcularCosto_min(this.min,this.costo_min,30);
     }

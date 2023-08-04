@@ -1,16 +1,20 @@
 package Model.Datos;
 
+import Model.Plan.Plan_movil;
+
 public class Estudiante {
     private String nombre;
     private String id_Estudiante;
     private Carrera carrera;
     private Celular celular;
+    private Plan_movil plan_movil;
 
-    public Estudiante(String nombre, String id_Estudiante, Carrera carrera, Celular celular) {
+    public Estudiante(String nombre, String id_Estudiante, Carrera carrera, Celular celular, Plan_movil plan_movil) {
         this.nombre = nombre;
         this.id_Estudiante = id_Estudiante;
         this.carrera = carrera;
         this.celular = celular;
+        this.plan_movil = plan_movil;
     }
 
     public String getNombre() {

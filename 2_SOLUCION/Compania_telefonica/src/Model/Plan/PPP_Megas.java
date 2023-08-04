@@ -14,7 +14,7 @@ public class PPP_Megas extends Plan_movil{
         return this.costos_megas.calcularCosto_megas(gigas, costo_gigas, 50);
     }
 
-    public void setTarifa() {
+    public void calcularTarifa() {
         this.tarifa += calcularExtra_gigas();
     }
 }

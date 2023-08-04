@@ -46,6 +46,10 @@ public abstract class Plan_movil_Minutos_Megas extends Plan_movil {
         this.costo_gigas = costo_gigas;
     }
 
+    public abstract double calcularExtra_min();
+
+    public abstract double calcularExtra_gigas();
+
     public abstract void calcularTarifa();
 
 }
